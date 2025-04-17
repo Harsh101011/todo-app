@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: "${env.GIT_CREDENTIALS_ID}", url: 'https://github.com/Harsh101011/todo-app.git'
+                git credentialsId: "${env.GIT_CREDENTIALS_ID}", url: 'https://github.com/Harsh101011/todo-app.git', branch: 'main'
             }
         }
 
